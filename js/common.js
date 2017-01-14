@@ -26,8 +26,8 @@ $(".right .resume_item").animated("fadeInRight", "fadeOutRight");
 
 /*анимация контента 2 блока*/
 $(".animation_1").animated("flipInY", "flipOutY");
-$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
-$(".animation_3").animated("fadeInRight", "fadeOutRight");
+$(".animation_2").animated("fadeInUp", "fadeOutDown");
+$(".animation_3").animated("fadeInUp", "fadeOutDown");
 
 
 	/*Всплывающее окно popup*/
@@ -91,15 +91,7 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 
 }); 
-//-----------------blueimg gallery------------------------------//
 
 
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    		blueimp.Gallery(links, options);
-};
+
 
